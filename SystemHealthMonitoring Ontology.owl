@@ -1,0 +1,1705 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/SHM#"
+     xml:base="http://www.semanticweb.org/SHM"
+     xmlns:gr="http://purl.org/goodrelations/v1#"
+     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+     xmlns:p0="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:uo="http://purl.obolibrary.org/obo/uo.owl"
+     xmlns:SHM="http://www.semanticweb.org/SHM#"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#Feature"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sem="http://semanticweb.cs.vu.nl/2009/11/sem/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:SHM1="http://www.semanticweb.org/SHM%20#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:schema="http://schema.org/sc"
+     xmlns:systems="http://www.w3.org/ns/ssn/systems/"
+     xmlns:oboInOwl="http://purl.obolibrary.org/obo/oboInOwl:">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/SHM"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/oboInOwl:hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/oboInOwl:hasExactSynonym"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/symbol -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/symbol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#describedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#describedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#describes -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#describes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasAnode -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasAnode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasCathode -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasCathode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasFeatureOfInterestOfCV -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasFeatureOfInterestOfCV"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasLowerValue -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasLowerValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasOperatingRange -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasOperatingRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasPart -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasReliability -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasReliability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasUpperValue -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#hasUpperValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#isCalculationFor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#isCalculationFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#isClassifiedAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#isClassifiedAs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#isInState -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#isInState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#isReliable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#isReliable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#isValid -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#isValid"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#suggestedFor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#suggestedFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#voltageCycleNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM#voltageCycleNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#describedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#describedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#describes -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#describes">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#State"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasAnode -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasAnode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasCathode -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasCathode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasFeatureOfInterestOfCV -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasFeatureOfInterestOfCV">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasLowerValue -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasLowerValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasOperatingRange -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasOperatingRange">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasPart -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasReliability -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasReliability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasUpperValue -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#hasUpperValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isCalculationFor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#isCalculationFor">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#CalculatedProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isClassifiedAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#isClassifiedAs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isInState -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#isInState">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#State"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isReliable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#isReliable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isValid -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#isValid">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#suggestedFor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#suggestedFor">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#voltageCycleNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/SHM%20#voltageCycleNumber"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema# decimal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema# decimal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#%20decimal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#%20decimal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#hasManufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/goodrelations/v1#hasManufacturer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#manufactured"/>
+        <rdfs:domain rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
+        <rdfs:range rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticweb.cs.vu.nl/2009/11/sem/hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://semanticweb.cs.vu.nl/2009/11/sem/hasActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#Event"/>
+        <rdfs:range rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+        <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#actionLeadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#actionLeadsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#eventLeadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#eventLeadsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#hasReliability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#hasReliability">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#reliabilityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#indicatesMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#indicatesMode">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isModeOfState"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#isInState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#isInState">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isStateOfSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#next -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#next">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#previous -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#previous">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#requiresAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM#requiresAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#MitigationAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#describedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#describedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#describes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#State"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/SHM#ObservationResult"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#describes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/SHM#ObservationResult"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasCalculatedValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasCalculatedValue">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isCalculationFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasFeatureOfInterestOfCV -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasFeatureOfInterestOfCV">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isFeatureOfInterestOfCV_Of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#CalculatedValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasLowerValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasLowerValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasOperatingRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasOperatingRange">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isOperatingRangeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasOutput">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isOutputOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#SensorOutput"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasPart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#SHM_System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#SystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasProperty">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasSuggestedMitigationAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasSuggestedMitigationAction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#suggestedFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#MitigationAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasUpperValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#hasUpperValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#FailureMode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#SystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isCalculatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isCalculatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SHM%20#usedForCalculationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#CalculatedValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isCalculationFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isCalculationFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#CalculatedValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isConditionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isConditionOf">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/systems/inCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isFeatureOfInterestOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isFeatureOfInterestOf">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isFeatureOfInterestOfCV_Of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isFeatureOfInterestOfCV_Of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isModeOfState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isModeOfState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isOperatingRangeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isOperatingRangeOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isOutputOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isOutputOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#SensorOutput"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isResultOf">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isStateOfSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#isStateOfSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#manufactured -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#manufactured">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#observedPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#observedPropertyOf">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#reliabilityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#reliabilityOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#suggestedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#suggestedFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM#MitigationAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#usedForCalculationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SHM%20#usedForCalculationOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasResult">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hosts">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/isHostedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isHostedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/isObservedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isObservedBy">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/observes"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeBySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeObservation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observedProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/hasSubSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/hasSubSystem">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/isPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/isPropertyOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/inCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/systems/inCondition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/operatingRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/systems/operatingRange"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/goodrelations/v1#hasName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#atTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM#atTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#modeTruthValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM#modeTruthValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#productionYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM#productionYear">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/System"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#reliabilityMeasure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM#reliabilityMeasure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#resultTruthValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM#resultTruthValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#stateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM#stateTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasLowerValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM%20#hasLowerValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hasUpperValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM%20#hasUpperValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isReliable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM%20#isReliable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#isValid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM%20#isValid"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#voltageCycleNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SHM%20#voltageCycleNumber"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/resultTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#BusinessEntity -->
+
+    <owl:Class rdf:about="http://purl.org/goodrelations/v1#BusinessEntity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM%20#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#ProductOrService -->
+
+    <owl:Class rdf:about="http://purl.org/goodrelations/v1#ProductOrService"/>
+    
+
+
+    <!-- http://semanticweb.cs.vu.nl/2009/11/sem/Actor -->
+
+    <owl:Class rdf:about="http://semanticweb.cs.vu.nl/2009/11/sem/Actor"/>
+    
+
+
+    <!-- http://semanticweb.cs.vu.nl/2009/11/sem/Event -->
+
+    <owl:Class rdf:about="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    
+
+
+    <!-- http://semanticweb.cs.vu.nl/2009/11/sem/LoadEvent -->
+
+    <owl:Class rdf:about="http://semanticweb.cs.vu.nl/2009/11/sem/LoadEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/SHM%20#Agent"/>
+        <rdfs:comment>A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</rdfs:comment>
+        <rdfs:label>unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/measure -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/SHM%20#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#Action">
+        <rdfs:comment>An action may trasnform a state</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#CalculatedValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#CalculatedValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM#ObservationResult"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#hasFeatureOfInterestOfCV"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM#SystemComponent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#isCalculatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#isCalculationFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM%20#CalculatedProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A calculated value may be calculated from multiple sensor outputs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#Event">
+        <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+        <rdfs:comment>An event may lead to a new state</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#FailureMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#FailureMode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#MitigationAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#MitigationAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM#Action"/>
+        <rdfs:comment>Mitigating actions are actions that are suggested to prevent a forthcoming failure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#MonitoredSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#MonitoredSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM#SHM_System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#isInState"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A monitored system at each time instance is in some state</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#ObservationResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#ObservationResult">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#resultTruthValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#SHM_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#SHM_System">
+        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
+        <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/goodrelations/v1#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have a name, a manufacturer and a production year.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#SensorOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#SensorOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM#ObservationResult"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#isOutputOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#State">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#indicatesMode"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#describedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM#ObservationResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#stateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/SHM%20#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#SystemComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#SystemComponent">
+        <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM%20#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/goodrelations/v1#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#CalculatedProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#CalculatedProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#FuelCellManufacturingCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#FuelCellManufacturingCompany">
+        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#HealthMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#HealthMode">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#modeTruthValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#HealthMonitoringSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#HealthMonitoringSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM#SHM_System"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#HighVoltageCycleNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#HighVoltageCycleNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#LowVoltageCycleNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#LowVoltageCycleNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#MediumVoltageCycleNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#MediumVoltageCycleNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#SensorManufacturingCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#SensorManufacturingCompany">
+        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#SensorMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#SensorMode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#SensorReliability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SHM%20#SensorReliability">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM%20#reliabilityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#atTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#reliabilityMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema# decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isObservedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeBySensor"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeBySensor"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/resultTime"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Result -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Result"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SHM#hasReliability"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/System -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/System"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Condition -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Condition">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingRange -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/inCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/inCondition"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/systems/Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/ampere -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <om:symbol>A</om:symbol>
+        <rdfs:comment>The ampere is a unit of electric current defined as the constant current that produces an attractive force of 2e–7 newton per metre of length between two straight, parallel conductors of infinite length and negligible circular cross section placed one metre apart in a vacuum.</rdfs:comment>
+        <rdfs:label>ampere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <om:symbol>°C</om:symbol>
+        <rdfs:comment>The degree Celsius is a unit of temperature defined as 1 kelvin.</rdfs:comment>
+        <rdfs:label>degree Celsius</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilopascal -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilopascal">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <om:symbol>kPa</om:symbol>
+        <rdfs:label>kilopascal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/percent -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/percent">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <om:symbol>%</om:symbol>
+        <rdfs:comment>The percent is a unit of dimension one defined as 1/100.</rdfs:comment>
+        <rdfs:label>percent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/volt -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volt">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <om:symbol>V</om:symbol>
+        <rdfs:comment>The volt is a unit of electric potential defined as watt divided by ampere = joule divided by coulomb = newton times metre divided by ampere times second = kilogram times square metre divided by ampere times second to the power 3.</rdfs:comment>
+        <rdfs:label>Volt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/watt -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/watt">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <om:symbol>W</om:symbol>
+        <rdfs:comment>The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3.</rdfs:comment>
+        <rdfs:label>Watt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#normalMode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM#normalMode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+        <rdfs:label>normal mode</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM#plastic_deformation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM#plastic_deformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM%20#HealthMode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#airMass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#airMass">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label>air mass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#airPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#airPressure">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label>air pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#ambientTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#ambientTemperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label>ambient temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#average -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#average"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#broken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#broken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM%20#SensorMode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#electricCurrent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#electricCurrent">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label>electric current</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCurrent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#electric_potential_difference -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#electric_potential_difference">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/PotentialDifference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#evidencedCatalystDissolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#evidencedCatalystDissolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM#FailureMode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#humidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#humidity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM%20#CalculatedProperty"/>
+        <rdfs:label>humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#humidityChange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#humidityChange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM%20#CalculatedProperty"/>
+        <om:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/percent"/>
+        <rdfs:label>humidity change</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hydrogenMass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#hydrogenMass">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label>hydrogen mass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#hydrogenPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#hydrogenPressure">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#power -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#power">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#stoichiometry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#stoichiometry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SHM%20#CalculatedProperty"/>
+        <rdfs:label>stoichiometry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM%20#temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM%20#temperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SHM_#relativeHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SHM_#relativeHumidity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label>relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/SHM#State"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/SHM%20#SensorReliability"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Observation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Result"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Property"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/ssn/System"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
