@@ -5,6 +5,7 @@ The relevant paper will be presented in Second International Workshop on Semanti
 The queries are generated based on an extension of the SHM ontology: SHM_PEMFC.owl which contains knowledge relevant to PEM fuel cell system monitoring.
 
 The prefixes used are the following:
+
 PREFIX shm: <http://www.semanticweb.org/SHM#>
 PREFIX shm_pemfc: <http://www.semanticweb.org/SHM_PEMFC#>
 PREFIX gr:<http://purl.org/goodrelations/v1#>
