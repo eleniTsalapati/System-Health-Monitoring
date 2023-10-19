@@ -1,0 +1,167 @@
+﻿{
+    "Sheet1": [
+        {
+            "Generic Question": "1. What is the  [OBSERVABLE PROPERTY] of the [SYSTEM COMPONENT]/system at/before/after t0?",
+            "Specific question": "1. What is the relative humidity  of the outer cathode of the system before the 2'?",
+            "SPARQL": "SELECT ?v WHERE {\r\n?o sosa:observedProperty/rdfs:label \"relative humidity\".\r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:hasResult/om:hasNumericalValue ?v.\r\n?o sosa:resultTime ?t\r\nFILTER(?t<\"2002-05-30T00:00:02.000\"^^xsd:dateTime)\r\n}"
+        },
+        {
+            "Generic Question": "2. Which sensors monitor the [OBSERVABLE PROPERTY] of the [SYSTEM COMPONENT]/system",
+            "Specific question": "2. Which sensors monitor the relative humidity  of the outer cathode of the system and what was their before the 2''?",
+            "SPARQL": "SELECT DISTINCT ?s ?v WHERE { \r\n ?o sosa:observedProperty/rdfs:label \"relative humidity\".  \r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:madeBySensor ?s.\r\n?o sosa:hasResult/om:hasNumericalValue ?v.\r\n?o sosa:resultTime ?t\r\nFILTER(?t<\"2002-05-30T00:00:02.000\"^^xsd:dateTime)\r\n}"
+        },
+        {
+            "Generic Question": "3. Return the [OBSERVABLE PROPERTY] sensors whose values grew monotonically the last [DURATION]",
+            "SPARQL": "cannot be expressed in SPARQL but the required concepts/roles exist in the ontology"
+        },
+        {
+            "Generic Question": "4. Return the sensors that their outputs dropped/increased suddenly after t0",
+            "SPARQL": "cannot be expressed in SPARQL but the required concepts/roles exist in the ontology"
+        },
+        {
+            "Generic Question": "5. When was the [OBSERVABLE PROPERTY]  of the [SYSTEM COMPONENT]/system more than a given threshold?",
+            "Specific question": "5. When was the relative humidity  of the outer cathode of the system  more than a given threshold?",
+            "SPARQL": "SELECT DISTINCT ?t ?v WHERE { \r\n ?o sosa:observedProperty/rdfs:label \"relative humidity\".  \r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:madeBySensor ?s.\r\n?o sosa:hasResult/om:hasNumericalValue ?v.\r\n?o sosa:resultTime ?t\r\nFILTER(?v>-27)\r\n}"
+        },
+        {
+            "Generic Question": "6. For how long was the [OBSERVABLE PROPERTY]  of the [SYSTEM COMPONENT]/system was positive/negative?",
+            "Specific question": "6. For how the long relative humidity of the outer cathode of the system was negative?",
+            "SPARQL": "cannot be expressed in SPARQL (as it may be negative during various time periods) but the required concepts/roles exist in the ontology. For a single time period see next cell.  ",
+            "special sparql": "SELECT DISTINCT  ?t1 ?t2 ((minutes(?t1)-minutes(?t2)) AS ?duration)  WHERE { \r\n \r\n{SELECT DISTINCT  ?t2 WHERE { \r\n ?o sosa:observedProperty/rdfs:label \"relative humidity\".  \r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:madeBySensor ?s.\r\n?o sosa:hasResult/om:hasNumericalValue ?v2.\r\n?o sosa:resultTime ?t2.\r\nFILTER(?v2<0).}\r\nORDER BY DESC(?t2) LIMIT 1\r\n}\r\n\r\n{\r\nSELECT DISTINCT  ?t1 WHERE { \r\n ?o sosa:observedProperty/rdfs:label \"relative humidity\".  \r\n?f sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:madeBySensor ?s.\r\n?o sosa:hasResult/om:hasNumericalValue ?v1.\r\n?o sosa:resultTime ?t1.\r\nFILTER(?v1<0).}\r\nORDER BY ASC(?t1) LIMIT 1\r\n}\r\n}"
+        },
+        {
+            "Generic Question": "7. For which time periods was the [OBSERVABLE PROPERTY]  of [SYSTEM COMPONENT]/system more than v0?",
+            "SPARQL": "cannot be expressed in SPARQL but the required concepts/roles exist in the ontology"
+        },
+        {
+            "Generic Question": "8. When was the[OBSERVABLE PROPERTY]  of [SYSTEM COMPONENT]/system minimum and what were the rest sensor outputs at that moment?",
+            "Specific question": "8. When was the relative humidity of the outer cathode of the system minimum and what were the rest sensor outputs at that moment?",
+            "SPARQL": "SELECT DISTINCT ?t ?v1 WHERE { \r\n?st shm:describedBy ?r1.\r\n?r1 om:hasNumericalValue ?v1.\r\n\r\n{SELECT DISTINCT ?st ?t ?r WHERE { \r\n?o sosa:observedProperty/rdfs:label \"relative humidity\".  \r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:madeBySensor ?s.\r\n?o sosa:hasResult ?r.\r\n?r om:hasNumericalValue ?v.\r\n?o sosa:resultTime ?t.\r\n?st shm:describedBy ?r.}\r\nORDER BY ASC(?v) LIMIT 1\r\n}\r\n\r\nFILTER(?r!=?r1)}"
+        },
+        {
+            "Generic Question": "9. Which [SYSTEM COMPONENT]/system values have reached [OBSERVABLE PROPERTY] more than a given threshold?",
+            "Specific question": "9. Which system components have reached relative humidity values more than a given threshold?",
+            "SPARQL": "SELECT DISTINCT ?f WHERE { \r\n?o sosa:observedProperty/rdfs:label \"relative humidity\".  \r\n?o sosa:hasFeatureOfInterest ?f.\r\n?o sosa:madeBySensor ?s.\r\n?o sosa:hasResult/om:hasNumericalValue ?v.\r\n?o sosa:resultTime ?t\r\nFILTER(?v>-28)\r\n}"
+        },
+        {
+            "Generic Question": "10. Which system components have reached temperatures more than a given threshold for more than t0?",
+            "SPARQL": "cannot be expressed in SPARQL but the required concepts/roles exist in the ontology"
+        },
+        {
+            "Generic Question": "11. What was the health state of the system when the  [OBSERVABLE PROPERTY] of the [SYSTEM COMPONENT]/system was maximum?",
+            "Specific question": "11. What was the health state of the system when the relative humidity of the outer cathode was maximum?",
+            "SPARQL": "SELECT ?mode WHERE {\r\n?s shm:stateTime ?t.\r\n?s shm:indicatesMode ?mode.\r\n{SELECT ?t WHERE {\r\n?o sosa:observedProperty/rdfs:label \"relative humidity\".\r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:hasResult/om:hasNumericalValue ?v.\r\n?o sosa:resultTime ?t.}\r\nORDER BY DESC(?v) LIMIT 1}}"
+        },
+        {
+            "Generic Question": "12. Which sensors were unreliable at/before/after t0?",
+            "SPARQL": "\r\nSELECT DISTINCT ?r  ?x ?m  WHERE { \r\n?s shm:hasReliability  ?r. \r\n?r shm:reliabilityMeasure ?m. \r\n?st shm:describedBy ?r.\r\n?st  shm:stateTime ?t.\r\nFILTER(?t>\"2002-05-30T00:00:01.000\"^^xsd:dateTime && ?m<0.5 )\r\n}"
+        },
+        {
+            "Generic Question": "13. Is the calculation of the [CALCULATED PROPERTY] of the [SYSTEM COMPONENT]/system at/before/after t0 reliable?",
+            "Specific question": "13. Is the calculation of the stoichiometry of the  anode  after 1' reliable?",
+            "SPARQL": "ASK WHERE  { \r\n?r  shm:calculatedProperty shm_pefmc:stoichiometry.\r\n?r shm:hasFeatureOfInterestOfCV/rdfs:label \"anode of stack1\"^^xsd:string.\r\n ?r shm:resultTruthValue ?tv.\r\n?st shm:describedBy ?r.\r\n?st shm:stateTime ?ti.\r\nFILTER(?ti>\"2002-05-30T00:00:01.000\"^^xsd:dateTime && ?tv>0.7)\r\n}"
+        },
+        {
+            "Generic Question": "14. What are the outputs of the sensors from which the [CALCULATED PROPERTY] of the of the [SYSTEM COMPONENT]/system is calculated at t0?",
+            "Specific question": "14. What are the outputs of the sensors from which the stoichiometry of the  anode  is calculated at t0?",
+            "SPARQL": "SELECT DISTINCT ?v1 WHERE  { \r\n?r  shm:calculatedProperty shm_pefmc:stoichiometry.\r\n?r shm:hasFeatureOfInterestOfCV/rdfs:label \"anode of stack1\"^^xsd:string.\r\n ?r shm:isCalculatedBy ?sn.\r\n?o sosa:hasResult ?r1.\r\n?r1 om:hasNumericalValue ?v1.\r\n?o  sosa:madeBySensor ?sn.\r\n?st shm:describedBy ?r1.\r\n?st shm:stateTime ?ti.\r\nFILTER(?ti>\"2002-05-30T00:00:01.000\"^^xsd:dateTime)\r\n}"
+        },
+        {
+            "Generic Question": "15. When did sensor [SENSOR NAME] become unreliable?",
+            "Specific question": "15. When did sensor rh_air become unreliable?",
+            "SPARQL": "SELECT DISTINCT ?t WHERE {\r\n?s gr:hasName \"rh_air\"^^xsd:string.\r\n?s shm:hasReliability ?r.\r\n?r shm:reliabilityMeasure  ?m. \r\n?r shm:atTime ?t.\r\nFILTER(?m<0.6)\r\n}\r\n ORDER BY ASC(?t) LIMIT 1"
+        },
+        {
+            "Generic Question": "16. Which sensors are out of order and when were they manufactured?",
+            "Specific question": "16. Which sensors are out of order and when were they manufactured?",
+            "SPARQL": "SELECT DISTINCT ?x ?y WHERE {\r\n?s gr:hasName ?x.\r\n?s shm:productionYear ?y.\r\n?s shm:hasReliability/shm:reliabilityMeasure  ?m. \r\nFILTER(?m<0.6)\r\n}"
+        },
+        {
+            "Generic Question": "17. When did the system [SYSTEM NAME] start to degrade?",
+            "Specific question": "17. When did the system \"fcsystem\" start to degrade?",
+            "SPARQL": "SELECT ?t WHERE { \r\n?s gr:hasName \"fcsystem\"^^xsd:string. \r\n?s shm:isInState ?st. \r\n?st shm:stateTime ?t. \r\n?st shm:indicatesMode/rdf:type shm:FailureMode} \r\nORDER BY ASC(?t) LIMIT 1"
+        },
+        {
+            "Generic Question": "18. When was it suggested to perform the x mitigation action?",
+            "Specific question": "20. When was it suggested to decrease the temperature (i.e., a mitigation action)?",
+            "SPARQL": "SELECT ?t ?x WHERE { \r\n?st shm:stateTime ?t. \r\n?st shm:requiresAction shm_pefmc:decreaseTemperature}"
+        },
+        {
+            "Generic Question": "19. In what condition was the system at t0?",
+            "Specific question": "19. In what condition was the system at t0?",
+            "SPARQL": "SELECT ?m WHERE { \r\n?s gr:hasName \"fcsystem\"^^xsd:string. \r\n?s shm:isInState ?st. \r\n?st shm:stateTime ?t. \r\n?st shm:indicatesMode ?m. \r\nFILTER(?t=\"2002-05-30T00:00:01.405\"^^xsd:dateTime )\r\n}",
+            "special sparql": "what happens if the time is not in the Abox? Find the previous and the next"
+        },
+        {
+            "Generic Question": "21. What was the temperature of x (system component) when the system started to fail?",
+            "SPARQL": "SELECT ?v WHERE { \r\n?o sosa:observedProperty/rdfs:label \"relative humidity\". \r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\". \r\n?o sosa:hasResult/om:hasNumericalValue ?v. \r\n?o sosa:resultTime ?t.{ \r\nSELECT ?t WHERE { \r\n?s shm:indicatesMode/rdf:type shm:FailureMode. \r\n?s shm:stateTime ?t } \r\nORDER BY ASC(?v) LIMIT 1 }}"
+        },
+        {
+            "Generic Question": "22. When was x (system component) manufactured?",
+            "SPARQL": "SELECT DISTINCT ?s ?y WHERE { \r\n?s rdfs:label \"anode of stack1\"^^xsd:string. \r\n?s shm:productionYear ?y }"
+        },
+        {
+            "Generic Question": "23. From which company are the faulty sensors and which other sensors are from this company?",
+            "SPARQL": "SELECT DISTINCT ?se ?cn WHERE { \r\n?se rdf:type/rdfs:subClassOf* ?s. \r\n?se gr:hasManufacturer/gr:hasName ?cn. \r\n{SELECT DISTINCT ?cn WHERE { \r\n?si rdf:type/rdfs:subClassOf* sosa:Sensor. \r\n?si gr:hasManufacturer/gr:hasName ?cn. \r\n?si shm:hasReliability/shm:reliabilityMeasure ?rm. \r\nFILTER(?rm<0.7)}}}"
+        },
+        {
+            "Generic Question": "24. What are the operating ranges of the temperature sensors monitoring x(system component) under normal conditions?"
+        },
+        {
+            "Generic Question": "25. Where are the temperature sensors placed? (here the answer will be the boundingboxes over a diagram representing the monitoredsystem and the names ofthe system components thatthey monitor)"
+        },
+        {
+            "Generic Question": "26. What is located here ?(where the word “here” represents a bounding boxdrawn with a cursor)",
+            "SPARQL": "\r\nSELECT DISTINCT ?si WHERE { \r\n?si geo:hasGeometry/geo:asWKT \"POLYGON ((354097.593749999 4535125, 354143.093750001 4535132, 354208 4535153, 354271.8125 4535180, 354338.312499999 4535223, 354413.812499999 4535276, 354488.187500001 4535344, 354562.90625 4535427, 354632.312499999 4535496, 354736.3125 4535592, 354800.3125 4535641, 354888.8125 4535715, 355028.8125 4535846, 355108.406250001 4535925, 355175.5 4536005, 355221.09375 4536100,  338662.312499999 4556519, 338645.999999999 4556499,  339280.3125 4555663, 339292.6875 4555642, 339305.09375 )).\".}"
+        },
+        {
+            "Generic Question": "27. What is the normal range of X when Y has a value of Z?"
+        },
+        {
+            "Generic Question": "28. When did the system return to normal state?",
+            "SPARQL": "SELECT ?t WHERE { \r\n?st shm:stateTime ?t. \r\n?st shm:indicatesMode shm:normalMode. \r\n?st shm:previous/shm:indicatesMode ?m. \r\n?m rdf:type shm:FailureMode}"
+        },
+        {
+            "Generic Question": "29. Show location of faulty sensors",
+            "SPARQL": "SELECT DISTINCT ?w WHERE { \r\n?si rdf:type/rdfs:subClassOf* sosa:Sensor. \r\n?si shm:hasReliability/shm:reliabilityMeasure ?rm. \r\n?si geo:hasGeometry/geo:asWKT ?w\r\nFILTER(?rm<0.7)}"
+        },
+        {
+            "Generic Question": "30. What are the mean, min, max values of [OSERVABLE PROPERTY] measured by sensor x during a certain period?",
+            "Specific question": "30. What are the mean, min, max values of temperature measured by sensor temp_stack1 during 0.005-2.408 secs?",
+            "SPARQL": "SELECT (AVG(?no) AS ?avg) \r\n       (MIN(?no) AS ?min) \r\n       (MAX(?no) AS ?max) \r\n WHERE { \r\n?o sosa:madeBySensor/gr:hasName \"temp_stack1\"^^xsd:string.\r\n?o sosa:hasResult/om:hasNumericalValue ?no.\r\n?o sosa:resultTime ?t.\r\nFILTER(?t >\"2002-05-30T00:00:00.005\"^^xsd:dateTime  && ?t<\"2002-05-30T00:00:02.408\"^^xsd:dateTime)\r\n} "
+        },
+        {
+            "Generic Question": "31. How many times did sensor x record values higher than a specific threshold during a day?",
+            "Specific question": "31. How many times did sensor x record values higher than a specific threshold during the first day?",
+            "SPARQL": "COUNT ?o WHERE {\r\n?o sosa:observedProperty/rdfs:label \"relative humidity\".\r\n?o sosa:hasFeatureOfInterest/skos:altLabel \"outer cathode\".\r\n?o sosa:hasResult/om:hasNumericalValue ?v.\r\nFILTER(?v>-27&& ?ti>\"2002-05-30T00:00:01.000\"^^xsd:dateTime && ?t <\"2002-05-31T00:00:01.000\"^^xsd:dateTime )\r\n}"
+        },
+        {
+            "Generic Question": "32. Was 𝑥 system subjected to a load event\r\nat time 0.474 that caused it to enter the\r\nplastic deformation region of its\r\nstress-strain relationship?",
+            "SPARQL": "ASK { \r\n?x rdf:type sem:LoadEvent. \r\n?x sem:hasActor shm:x_system. \r\nshm:x_system shm:isInState ?st. \r\n?st shm:stateTime \"2022-05-30T00:00:00.474\"^^xsd:dateTime. \r\n?st shm:indicatesMode sem:plastic_deformation.}"
+        },
+        {
+            "Generic Question": "33. Are the mean values recorded by sensors stationary over time or do they exhibit changes?",
+            "SPARQL": "data analytics are required"
+        },
+        {
+            "Generic Question": "34. What is the first natural frequency of the structure based on modal analysis of sensor measurements?",
+            "SPARQL": "data analytics are required"
+        },
+        {
+            "Generic Question": "35. What is the fatigue life estimate of component x based on its stress history?",
+            "SPARQL": "data analytics are required"
+        },
+        {
+            "Generic Question": "36. What is the degree of correlation between sensors, expressed as a percentage of amplitude measurements?",
+            "SPARQL": "data analytics are required"
+        },
+        {
+            "Generic Question": "37. What is the correlation between X and Y?",
+            "SPARQL": "data analytics are required"
+        },
+        {
+            "Generic Question": "38. When has the correlation between X and Y changed?",
+            "SPARQL": "data analytics are required"
+        }
+    ]
+}
