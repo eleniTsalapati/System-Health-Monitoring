@@ -122,7 +122,7 @@
             "SPARQL": "SELECT ?t WHERE { \r\n?st shm:stateTime ?t. \r\n?st shm:indicatesMode shm:normalMode. \r\n?st shm:previous/shm:indicatesMode ?m. \r\n?m rdf:type shm:FailureMode}"
         },
         {
-            "Generic Question": "29. Show location of faulty sensors",
+            "Generic Question": "29. Show the location of faulty sensors",
             "SPARQL": "SELECT DISTINCT ?w WHERE { \r\n?si rdf:type/rdfs:subClassOf* sosa:Sensor. \r\n?si shm:hasReliability/shm:reliabilityMeasure ?rm. \r\n?si geo:hasGeometry/geo:asWKT ?w\r\nFILTER(?rm<0.7)}"
         },
         {
